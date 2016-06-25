@@ -17,10 +17,11 @@ The following platforms and versions are tested and supported using Opscode's te
 ## Attributes
 
 #### butterfly::default
-|               Key      |  Type   |                 Description              |
-| -----------------------| ------- | ---------------------------------------- |
-| `[butterfly][version]` | String  | Butterfly package version (default: nil) |
-| `[butterfly][config]`  | Hash    | Butterfly configuration                  |
+|    Key                  |  Type   |    Description                                           |
+| ------------------------| ------- | -------------------------------------------------------- |
+| `[butterfly][packages]` | Array   | Required packages (default: [libffi-dev python-openssl]) |
+| `[butterfly][version]`  | String  | Butterfly package version (default: nil)                 |
+| `[butterfly][config]`   | Hash    | Butterfly configuration                                  |
 
 ## Usage
 
