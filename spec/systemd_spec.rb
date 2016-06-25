@@ -17,12 +17,18 @@ describe 'butterfly::systemd' do
   end
 
   it 'creates template[/etc/systemd/system/butterfly.socket]' do
-    expect(subject).to create_template(
-      '/etc/systemd/system/butterfly.socket'
-    ).with(source: 'butterfly.socket.erb',
-           owner: 'root',
-           group: 'root',
-           mode: '0644')
+    config_file = '/etc/systemd/system/butterfly.socket'
+    matches = [/ListenStream=localhost:57575/]
+
+    expect(subject).to create_template(config_file)
+      .with(source: 'butterfly.socket.erb',
+            owner: 'root',
+            group: 'root',
+            mode: '0644')
+
+    matches.each do |m|
+      expect(subject).to render_file(config_file).with_content(m)
+    end
   end
 
   it 'enables service[butterfly.socket]' do
