@@ -14,8 +14,8 @@ cookbook_file '/etc/systemd/system/butterfly.service' do
   notifies :restart, 'service[butterfly.socket]', :delayed
 end
 
-cookbook_file '/etc/systemd/system/butterfly.socket' do
-  source 'butterfly.socket'
+template '/etc/systemd/system/butterfly.socket' do
+  source 'butterfly.socket.erb'
   owner 'root'
   group 'root'
   mode '0644'

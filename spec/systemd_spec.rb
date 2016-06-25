@@ -16,10 +16,10 @@ describe 'butterfly::systemd' do
            mode: '0644')
   end
 
-  it 'creates cookbook_file[/etc/systemd/system/butterfly.socket]' do
-    expect(subject).to create_cookbook_file(
+  it 'creates template[/etc/systemd/system/butterfly.socket]' do
+    expect(subject).to create_template(
       '/etc/systemd/system/butterfly.socket'
-    ).with(source: 'butterfly.socket',
+    ).with(source: 'butterfly.socket.erb',
            owner: 'root',
            group: 'root',
            mode: '0644')
