@@ -1,6 +1,6 @@
 # butterfly Cookbook | [![Cookbook Version](https://img.shields.io/cookbook/v/butterfly.svg)](https://community.opscode.com/cookbooks/butterfly) [![Build Status](https://travis-ci.org/sliim-cookbooks/butterfly.svg?branch=master)](https://travis-ci.org/sliim-cookbooks/butterfly) 
 
-Installs/Configures [butterfly](http://nicolargo.github.io/butterfly/) on your server!
+Installs/Configures [butterfly](https://github.com/paradoxxxzero/butterfly) on your server!
 
 ## Requirements
 
