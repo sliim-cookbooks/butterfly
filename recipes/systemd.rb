@@ -31,7 +31,7 @@ end
 execute 'systemctl-daemon-reload' do
   action :nothing
   command 'systemctl daemon-reload'
-  subscribes :run, 'template[/etc/system/systemd/butterfly.service]',
+  subscribes :run, 'cookbook_file[/etc/system/systemd/butterfly.service]',
              :immediately
   subscribes :run, 'template[/etc/system/systemd/butterfly.socket]',
              :immediately
