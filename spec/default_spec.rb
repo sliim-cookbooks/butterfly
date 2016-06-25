@@ -7,18 +7,18 @@ describe 'butterfly::default' do
     ChefSpec::SoloRunner.new.converge(described_recipe)
   end
 
-  it 'includes recipe[python]' do
-    expect(subject).to include_recipe('python')
-  end
-
   %w(libffi-dev python-openssl).each do |pkg|
     it "installs package[#{pkg}]" do
       expect(subject).to install_package(pkg)
     end
   end
 
-  it 'installs python_pip[butterfly]' do
-    expect(subject).to install_python_pip('butterfly').with(version: nil)
+  it 'installs python_runtime[2]' do
+    expect(subject).to install_python_runtime('2')
+  end
+
+  it 'installs python_package[butterfly]' do
+    expect(subject).to install_python_package('butterfly').with(version: nil)
   end
 
   it 'creates directory[/etc/butterfly]' do
@@ -43,8 +43,9 @@ describe 'butterfly::default' do
       end.converge(described_recipe)
     end
 
-    it 'installs python_pip[butterfly]' do
-      expect(subject).to install_python_pip('butterfly').with(version: '2.0.1')
+    it 'installs python_package[butterfly]' do
+      expect(subject).to install_python_package('butterfly')
+        .with(version: '2.0.1')
     end
   end
 end

@@ -11,7 +11,7 @@ recipe 'default', 'Installs/Configures butterfly'
 recipe 'libsass', 'Installs libsass pip package for themes support'
 recipe 'systemd', 'Butterfly service with systemd'
 
-depends 'python'
+depends 'poise-python'
 
 supports 'ubuntu'
 supports 'debian'

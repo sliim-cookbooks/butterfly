@@ -6,13 +6,13 @@
 # Copyright 2016, Sliim
 #
 
-include_recipe 'python'
-
 node['butterfly']['packages'].each do |pkg|
   package pkg
 end
 
-python_pip 'butterfly' do
+python_runtime node['butterfly']['python']
+
+python_package 'butterfly' do
   version node['butterfly']['version']
 end
 

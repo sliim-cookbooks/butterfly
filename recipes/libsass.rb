@@ -6,4 +6,4 @@
 # Copyright 2016, Sliim
 #
 
-python_pip 'libsass'
+python_package 'libsass'

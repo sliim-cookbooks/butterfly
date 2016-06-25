@@ -8,6 +8,6 @@ describe 'butterfly::libsass' do
   end
 
   it 'installs python_pip[butterfly]' do
-    expect(subject).to install_python_pip('libsass')
+    expect(subject).to install_python_package('libsass')
   end
 end
