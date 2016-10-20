@@ -5,7 +5,7 @@ maintainer_email 'sliim@mailoo.org'
 license 'Apache 2.0'
 description 'Installs/Configures butterfly'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.2.0'
+version '0.2.1'
 
 recipe 'default', 'Installs/Configures butterfly'
 recipe 'libsass', 'Installs libsass pip package for themes support'
