@@ -2,14 +2,10 @@
 name 'butterfly'
 maintainer 'Sliim'
 maintainer_email 'sliim@mailoo.org'
-license 'Apache 2.0'
+license 'Apache-2.0'
 description 'Installs/Configures butterfly'
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+chef_version '>= 12'
 version '0.2.1'
-
-recipe 'default', 'Installs/Configures butterfly'
-recipe 'libsass', 'Installs libsass pip package for themes support'
-recipe 'systemd', 'Butterfly service with systemd'
 
 depends 'poise-python'
 
