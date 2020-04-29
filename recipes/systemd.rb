@@ -1,10 +1,6 @@
-# -*- coding: utf-8 -*-
-#
-# Cookbook Name:: butterfly
+# Cookbook:: butterfly
 # Recipe:: systemd
-#
-# Copyright 2016, Sliim
-#
+# Copyright:: 2016-2020 Sliim
 
 cookbook_file '/etc/systemd/system/butterfly.service' do
   source 'butterfly.service'

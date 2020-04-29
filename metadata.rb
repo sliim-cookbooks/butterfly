@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 name 'butterfly'
 maintainer 'Sliim'
 maintainer_email 'sliim@mailoo.org'
@@ -12,7 +11,5 @@ depends 'poise-python'
 supports 'ubuntu'
 supports 'debian'
 
-source_url 'https://github.com/sliim-cookbooks/butterfly' if
-  respond_to?(:source_url)
-issues_url 'https://github.com/sliim-cookbooks/butterfly/issues' if
-  respond_to?(:issues_url)
+source_url 'https://github.com/sliim-cookbooks/butterfly'
+issues_url 'https://github.com/sliim-cookbooks/butterfly/issues'

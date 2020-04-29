@@ -1,10 +1,6 @@
-# -*- coding: utf-8 -*-
-#
-# Cookbook Name:: butterfly
+# Cookbook:: butterfly
 # Attributes:: default
-#
-# Copyright 2016, Sliim
-#
+# Copyright:: 2016-2020 Sliim
 
 default['butterfly']['packages'] = %w(libffi-dev python-openssl)
 default['butterfly']['version'] = nil
@@ -21,5 +17,5 @@ default['butterfly']['config'] = {
   unsecure: 'False',
   login: 'False',
   force_unicode_width: 'False',
-  ssl_version: 'None'
+  ssl_version: 'None',
 }
