@@ -23,4 +23,5 @@ template '/etc/butterfly/butterfly.conf' do
   owner 'root'
   group 'root'
   mode '0644'
+  variables config: node['butterfly']['config']
 end

@@ -15,6 +15,7 @@ template '/etc/systemd/system/butterfly.socket' do
   owner 'root'
   group 'root'
   mode '0644'
+  variables config: node['butterfly']['config']
   notifies :restart, 'service[butterfly.socket]', :delayed
 end
 

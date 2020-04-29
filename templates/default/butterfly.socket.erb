@@ -1,5 +1,5 @@
 [Socket]
-ListenStream=<%= node['butterfly']['config']['host'].gsub!(/^\"|\"?$/, '') %>:<%= node['butterfly']['config']['port'] %>
+ListenStream=<%= @config['host'].gsub(/^\"|\"?$/, '') %>:<%= @config['port'] %>
 
 [Install]
 WantedBy=sockets.target
