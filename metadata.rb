@@ -9,7 +9,7 @@ version '0.3.0'
 depends 'spython'
 
 supports 'ubuntu', '>= 16.04'
-supports 'debian', '>= 9'
+supports 'debian', '>= 9.0'
 
 source_url 'https://github.com/sliim-cookbooks/butterfly'
 issues_url 'https://github.com/sliim-cookbooks/butterfly/issues'
