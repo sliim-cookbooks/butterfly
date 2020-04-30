@@ -6,9 +6,10 @@ node['butterfly']['packages'].each do |pkg|
   package pkg
 end
 
-python_runtime node['butterfly']['python']
+spython_runtime node['butterfly']['python']
 
-python_package 'butterfly' do
+spython_package 'butterfly' do
+  runtime node['butterfly']['python']
   version node['butterfly']['version']
 end
 

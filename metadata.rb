@@ -6,7 +6,7 @@ description 'Installs/Configures butterfly'
 chef_version '>= 13'
 version '0.2.1'
 
-depends 'poise-python'
+depends 'spython'
 
 supports 'ubuntu'
 supports 'debian'

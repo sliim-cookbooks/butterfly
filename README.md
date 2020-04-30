@@ -5,7 +5,7 @@ Installs/Configures [butterfly](https://github.com/paradoxxxzero/butterfly) on y
 ## Requirements
 
 #### cookbooks
-- `poise-python`
+- `spython`
 
 #### Platforms
 The following platforms and versions are tested and supported using Opscode's test-kitchen:
@@ -20,7 +20,7 @@ The following platforms and versions are tested and supported using Opscode's te
 |    Key                  |  Type   |    Description                                           |
 | ------------------------| ------- | -------------------------------------------------------- |
 | `[butterfly][packages]` | Array   | Required packages (default: [libffi-dev python-openssl]) |
-| `[butterfly][version]`  | String  | Butterfly package version (default: nil)                 |
+| `[butterfly][version]`  | String  | Butterfly package version (default: '')                  |
 | `[butterfly][python]`   | String  | Python runtime to use (default: 2)                       |
 | `[butterfly][config]`   | Hash    | Butterfly configuration                                  |
 

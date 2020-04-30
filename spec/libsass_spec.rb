@@ -5,7 +5,8 @@ describe 'butterfly::libsass' do
     ChefSpec::SoloRunner.new.converge(described_recipe)
   end
 
-  it 'installs python_pip[butterfly]' do
-    expect(subject).to install_python_package('libsass')
+  it 'installs spython_package[butterfly]' do
+    expect(subject).to install_spython_package('libsass')
+      .with(runtime: '2')
   end
 end
