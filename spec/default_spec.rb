@@ -11,14 +11,14 @@ describe 'butterfly::default' do
     end
   end
 
-  it 'installs spython_runtime[2]' do
-    expect(subject).to install_spython_runtime('2')
+  it 'installs spython_runtime[3]' do
+    expect(subject).to install_spython_runtime('3')
   end
 
   it 'installs spython_package[butterfly]' do
     expect(subject).to install_spython_package('butterfly')
       .with(version: '',
-            runtime: '2')
+            runtime: '3')
   end
 
   it 'creates directory[/etc/butterfly]' do
@@ -46,7 +46,7 @@ describe 'butterfly::default' do
     it 'installs spython_package[butterfly]' do
       expect(subject).to install_spython_package('butterfly')
         .with(version: '2.0.1',
-              runtime: '2')
+              runtime: '3')
     end
   end
 end

@@ -7,6 +7,6 @@ describe 'butterfly::libsass' do
 
   it 'installs spython_package[butterfly]' do
     expect(subject).to install_spython_package('libsass')
-      .with(runtime: '2')
+      .with(runtime: '3')
   end
 end
