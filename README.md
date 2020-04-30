@@ -21,7 +21,7 @@ The following platforms and versions are tested and supported using Opscode's te
 | ------------------------| ------- | -------------------------------------------------------- |
 | `[butterfly][packages]` | Array   | Required packages (default: [libffi-dev python-openssl]) |
 | `[butterfly][version]`  | String  | Butterfly package version (default: '')                  |
-| `[butterfly][python]`   | String  | Python runtime to use (default: 2)                       |
+| `[butterfly][python]`   | String  | Python runtime to use (default: 3)                       |
 | `[butterfly][config]`   | Hash    | Butterfly configuration                                  |
 
 ## Usage

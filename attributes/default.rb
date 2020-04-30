@@ -4,7 +4,7 @@
 
 default['butterfly']['packages'] = %w(libffi-dev python-openssl)
 default['butterfly']['version'] = ''
-default['butterfly']['python'] = '2'
+default['butterfly']['python'] = '3'
 default['butterfly']['config'] = {
   debug: 'False',
   more: 'False',
