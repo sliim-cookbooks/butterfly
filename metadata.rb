@@ -8,8 +8,8 @@ version '0.2.1'
 
 depends 'spython'
 
-supports 'ubuntu'
-supports 'debian'
+supports 'ubuntu', '>= 16.04'
+supports 'debian', '>= 9'
 
 source_url 'https://github.com/sliim-cookbooks/butterfly'
 issues_url 'https://github.com/sliim-cookbooks/butterfly/issues'

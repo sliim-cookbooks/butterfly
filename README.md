@@ -1,4 +1,4 @@
-# butterfly Cookbook | [![Cookbook Version](https://img.shields.io/cookbook/v/butterfly.svg)](https://community.opscode.com/cookbooks/butterfly) [![Build Status](https://travis-ci.org/sliim-cookbooks/butterfly.svg?branch=master)](https://travis-ci.org/sliim-cookbooks/butterfly) 
+# butterfly Cookbook | [![Cookbook Version](https://img.shields.io/cookbook/v/butterfly.svg)](https://supermarket.chef.io/cookbooks/butterfly) [![Build Status](https://travis-ci.org/sliim-cookbooks/butterfly.svg?branch=master)](https://travis-ci.org/sliim-cookbooks/butterfly) 
 
 Installs/Configures [butterfly](https://github.com/paradoxxxzero/butterfly) on your server!
 
@@ -9,10 +9,10 @@ Installs/Configures [butterfly](https://github.com/paradoxxxzero/butterfly) on y
 
 #### Platforms
 The following platforms and versions are tested and supported using Opscode's test-kitchen:
-- `Ubuntu 12.04`
-- `Ubuntu 14.04`
-- `Debian 7`
-- `Debian 8`
+- `Ubuntu 16.04`
+- `Ubuntu 18.04`
+- `Debian 9`
+- `Debian 10`
 
 ## Attributes
 
