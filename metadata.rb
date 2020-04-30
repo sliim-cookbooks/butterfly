@@ -4,7 +4,7 @@ maintainer_email 'sliim@mailoo.org'
 license 'Apache-2.0'
 description 'Installs/Configures butterfly'
 chef_version '>= 13'
-version '0.2.1'
+version '0.3.0'
 
 depends 'spython'
 
